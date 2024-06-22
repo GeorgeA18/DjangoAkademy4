@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +9,23 @@
     <title>Home</title>
 </head>
 <body>
+
+    <h1>alskjflkasjdf;ljasd;lfj</h1>
     
-    {% extends "base.html" %}
+    
 
-    {% block content %}
+    
 
-        {% for publicaciones in publicacion_List %}
+        {% for publicacion in publicaciones_list %}
 
-            <a href="{% url 'detail' publicaciones.pk %}">{{ publicaciones.titulo }}</a>
+            <a href="{% url 'detail' publicacion.pk %}">{{ publicacion.titulo }}</a>
 
         {% endfor %}
 
-    {% endblock %}
+        <p><a href="{% url 'create' %}"><input type="submit" value="Crear"></a></p>
+        
+    
 
 </body>
 </html>
+{% endblock %}
