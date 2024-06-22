@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>HOLA</h1>
+    
+    {% extends "base.html" %}
+
+    {% block content %}
+
+        {% for publicaciones in publicacion_List %}
+
+            <a href="{% url 'detail' publicaciones.pk %}">{{ publicaciones.titulo }}</a>
+
+        {% endfor %}
+
+    {% endblock %}
+
 </body>
 </html>
