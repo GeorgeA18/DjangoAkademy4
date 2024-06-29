@@ -15,8 +15,9 @@ class DetailPageView(DetailView):
     template_name = "post_detail.html"
     model = Publicaciones
 
-# Para editar
 
+
+# Para editar
 class UpdatePageView(UpdateView):
     template_name = "post_update.html"
     model = Publicaciones
