@@ -20,6 +20,7 @@
     <p>PRUEBA</p>
         
     <a href="{% url 'update' object.pk %}"> <input type="submit" value="update"> </a>
+    <a href="{% url 'delete' object.pk %}"> <input type="submit" value="delete"> </a>
 
     {% endblock %}
 
