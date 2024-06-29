@@ -11,8 +11,15 @@
 
     {% block content %}
 
-        <h2>{{ object.titulo }}</h2>
-        <p>{{ object.descripcion}}</p>
+    <p>PRUEBA</p>
+    <h2>{{ object.titulo }}</h2>
+    <H3>{{ object.descripcion }}</H3>
+    
+    <h3>ASDFASD</h3>
+
+    <p>PRUEBA</p>
+        
+    <a href="{% url 'update' object.pk %}"> <input type="submit" value="update"> </a>
 
     {% endblock %}
 
