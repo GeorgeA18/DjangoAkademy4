@@ -12,13 +12,16 @@
     {% block content %}
 
     <p>PRUEBA</p>
-    
+
     <h2>{{ object.titulo }}</h2>
     <H3>{{ object.descripcion }}</H3>
-    
-    <h3>ASDFASD</h3>
 
-    <p>PRUEBA</p>
+    <!-- este if te quita el error, de que si no tienes una imagen cargada -->
+    {% if object.image  %}
+
+    <img src="{{ object.image.url }}" alt="">
+    
+    {% endif %}
         
     <a href="{% url 'update' object.pk %}"> <input type="submit" value="update"> </a>
     <a href="{% url 'delete' object.pk %}"> <input type="submit" value="delete"> </a>
