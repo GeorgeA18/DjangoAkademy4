@@ -10,6 +10,7 @@ from django.urls import reverse_lazy
 class HomePageView(ListView):
     template_name = "home.html"
     model = Publicaciones
+    
 
 
 class DetailPageView(DetailView):

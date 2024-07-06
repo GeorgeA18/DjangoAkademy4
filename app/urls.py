@@ -7,4 +7,6 @@ urlpatterns = [
     path("create", CreatePageView.as_view(),name= "create"),
     path("detail/<int:pk>/update",UpdatePageView.as_view(),name="update" ),
     path("detail/<int:pk>/delete",DeleteView.as_view(),name="delete"),
+
+    
 ]
