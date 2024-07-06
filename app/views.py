@@ -25,6 +25,7 @@ class UpdatePageView(UpdateView):
     fields = [
         "titulo", "descripcion"
     ]
+    success_url = reverse_lazy("home")
 
 class CreatePageView(CreateView):
     template_name = "post_create.html"

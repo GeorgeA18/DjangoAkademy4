@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" src="/Style/style.css">
 </head>
 <body>
 
@@ -19,10 +20,13 @@
 
         {% endfor %}
 
-        <p><a href="{% url 'create' %}"><input type="submit" value="Crear"></a></p>
-        
-    
+        <p><a href="{% url 'create' %}" ><input type="submit" value="Crear"></a></p>
 
-</body>
-</html>
+
+        
+        
+        
+        <button class="button-crear">Crear</button>
+    </body>
+    </html>
 {% endblock %}

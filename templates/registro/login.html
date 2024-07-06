@@ -1,0 +1,11 @@
+
+
+<form action="" method="post">
+
+    {% csrf_token %}  <!-- Este token se utiliza para verificar que el usuario autenticado es la persona que realmente realiza las peticiones a la aplicación.  -->
+
+    {{ form.as_table }}
+
+    <input type="submit" value="Log in">
+
+</form>
