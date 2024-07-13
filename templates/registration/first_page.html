@@ -13,12 +13,12 @@
 
     <p><a href="{% url 'home' %}">Twitter</a></p>
 
-    <p><a href="{% url 'logout' %}">log out</a></p>
+    <p><a href="{% url 'logout1' %}">log out</a></p>
     
     {% else %}
     
     <p>Ingresa tus datos para poder accerder a la aplicacion</p>
-    <p><a href="{% url 'login' %}">sing up</a></p>
+    <p><a href="{% url 'login' %}">Log in</a></p>
     
     {% endif %}
     

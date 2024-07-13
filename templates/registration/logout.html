@@ -1,6 +1,6 @@
 
 
-<form action="{% url 'login' %}" method="post">
+<form action="{% url 'logout' %}" method="post">
 
     {% csrf_token %}  <!-- Este token se utiliza para verificar que el usuario autenticado es la persona que realmente realiza las peticiones a la aplicación.  -->
 

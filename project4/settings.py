@@ -131,5 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Es como el reverse_lazy pero solo se usa para el log in y el log out.
-LOGIN_REDIRECT_URL=("home")  
-LOGOUT_REDIRECT_URL=("first_page")
+LOGIN_REDIRECT_URL="home"
+LOGOUT_REDIRECT_URL="first_page"
